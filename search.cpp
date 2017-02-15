@@ -67,3 +67,32 @@ int main()
 
     return 0;
 }
+
+int linearSearch(auto data, auto key)
+{
+	char test = 'a';
+	int i = 0;
+	while(test == 'a')
+	{
+		if (key != data[i])
+		{
+			test = 'f';
+			i++;			
+		}
+		else 
+		{
+			test = 't';
+			
+		}
+	}
+	if (test == 'f' && (data.size() == i -1))
+			{	
+				return -1;
+			 }
+			 else 
+			 {
+				 return 0;
+			 }			
+			
+			 
+}
