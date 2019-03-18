@@ -70,14 +70,16 @@ int main()
 
 int linearSearch(auto data, auto key)
 {
-	char test = 'a';
-	int i = 0;
-	while(test == 'a')
+	//char test = 'a';
+	//bool test = false;
+	//int i = 0;
+	
+	/*while(test == 'a')
 	{
 		if (key != data[i])
 		{
 			test = 'f';
-			i++;			
+			i = i +1;			
 		}
 		else 
 		{
@@ -85,14 +87,27 @@ int linearSearch(auto data, auto key)
 			
 		}
 	}
+	
+
 	if (test == 'f' && (data.size() == i -1))
 			{	
 				return -1;
 			 }
-			 else 
+	else if (test == 't') 
 			 {
-				 return 0;
+				 return i;
 			 }			
-			
+	*/
+
+
+for(int i = 0; i< data.size(); i++)
+{
+	if(data[i] == key)
+	return i;
+}
+return -1; 
+	
+
+		
 			 
 }
